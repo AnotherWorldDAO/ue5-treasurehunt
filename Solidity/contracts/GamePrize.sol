@@ -11,6 +11,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 abstract contract BaseErc20 {
     function balanceOf(address account) public virtual returns (uint256);
+
     function transfer(address recipient, uint256 amount) public virtual;
 }
 
