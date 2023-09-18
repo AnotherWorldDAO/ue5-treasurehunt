@@ -1,0 +1,13 @@
+node_modules
+
+#Hardhat files
+cache
+artifacts
+.env
+yarn.lock
+flatten
+package-lock.json
+.deps
+.DS_Store
+functions/ui-debug.log
+env
