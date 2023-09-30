@@ -4,7 +4,8 @@ This is an Unreal Engine 5.2 sample project that drips ERC20 tokens during the g
 ## Overview
 This is a minimum setup for an Unreal Engine game client to receive blockchain token airdrops. To simplify the player experience, this project assumes players will enter their ETH addresses at the beginning of the game. Based on game mechanics, the game server will airdrop blockchain tokens to the player's wallet address. The game will only do passive airdrops (while the server wallet pays gas fees). Additional airdrop rules can be applied on the server side or on the contract side.
 
-![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/16676284-9fde-4a66-8cf5-e96d8b41bfc8)
+![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/f52b4bf2-0cab-42da-a379-8e1537a4c409)
+
 
 A full setup requires the following parts:
 - **An Unreal Engine project**: This 3rd person single player project is based on https://github.com/Sixze/ALS-Refactored (can be extended to multiplayer) and use https://github.com/ufna/VaRest to make REST calls.
