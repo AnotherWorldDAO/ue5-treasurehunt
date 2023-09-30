@@ -18,12 +18,12 @@ A full setup requires the following parts:
 - Install Unreal Engine 5.2 https://www.unrealengine.com/en-US/
 - Clone this repo or [download the latest release](https://github.com/AnotherWorldDAO/ue5-treasurehunt/releases)
 - Double-click on `TreasureHuntSample.uproject` to launch this project in the Unreal Engine editor
-- You are at `EntryMap` and click `Play`. 
+- At `EntryMap`, click `Play` to run this game within the editor (check other Unreal beginner tutorials if you got stuck here)
 - [opt-in] Enter/paste a desired ETH address. Or, you will be using the project's default ETH address to receive test ERC20 tokens.
 - Click `START`. You are now in the `DefaultMap`
-- Use `W, A, S, D` to move around. Drag the mouse to rotate the view. Click `Space bar` to jump.
-- Touch the airdrop boxes to receive test ERC20 tokens (via Goerli Testnet and Optimism Goerli Testnet).
-- [intermediate] You can deploy your own contracts and serverless functions.
+- Use `W, A, S, D` to move around. Drag the mouse to rotate the view. Click `Space bar` to jump
+- Touch the airdrop boxes to receive test ERC20 tokens (via Goerli Testnet and Optimism Goerli Testnet)
+- [intermediate] You can deploy your own contracts and serverless functions
 
 ## Live implementation
 You can see live demos related to this repo in Another World (https://anotherworld.gg/): players enter ENS at the entry menu and will receive (limited) token airdrops.
