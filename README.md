@@ -16,7 +16,7 @@ A full setup requires the following parts:
 
 ## Quick Start (Unreal Engine)
 - Install Unreal Engine 5.2 https://www.unrealengine.com/en-US/
-- Clone this repo
+- Clone this repo or [download the latest release](https://github.com/AnotherWorldDAO/ue5-treasurehunt/releases)
 - Double-click on `TreasureHuntSample.uproject` to launch this project in the Unreal Engine editor
 - You are at `EntryMap` and click `Play`. 
 - [opt-in] Enter/paste a desired ETH address. Or, you will be using the project's default ETH address to receive test ERC20 tokens.
