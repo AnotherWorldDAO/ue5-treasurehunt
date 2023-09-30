@@ -27,7 +27,7 @@ A full setup requires the following parts:
 - [intermediate] You can deploy your own contracts and serverless functions
 
 ## Live implementation
-You can see live demos related to this repo in Another World (https://anotherworld.gg/): players enter ENS at the entry menu and will receive (limited) token airdrops. There may be tokens available in the following GamePrize contracts:
+You can see [live demos](https://x.com/JackieLeeETH/status/1706024946957479960?s=20) related to this repo in Another World (https://anotherworld.gg/): players enter ENS at the entry menu and will receive (limited) token airdrops. There may be tokens available in the following GamePrize contracts:
 - $APE prize contract (ETH Mainnet) https://etherscan.io/address/0x496e83e7a74561c26d5151c0fce2cc400e884e49
 - $OP prize contract (Optimism) https://optimistic.etherscan.io/address/0x0b69157f85fb767676428f0d32866ee2b53ffcc6
 
