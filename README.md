@@ -28,8 +28,8 @@ A full setup requires the following parts:
 
 ## Live implementation
 You can see live demos related to this repo in Another World (https://anotherworld.gg/): players enter ENS at the entry menu and will receive (limited) token airdrops. There may be tokens available in the following GamePrize contracts:
-- $APE prize contract https://etherscan.io/address/0x496e83e7a74561c26d5151c0fce2cc400e884e49
-- $OP prize contract https://optimistic.etherscan.io/address/0x0b69157f85fb767676428f0d32866ee2b53ffcc6
+- $APE prize contract (ETH Mainnet) https://etherscan.io/address/0x496e83e7a74561c26d5151c0fce2cc400e884e49
+- $OP prize contract (Optimism) https://optimistic.etherscan.io/address/0x0b69157f85fb767676428f0d32866ee2b53ffcc6
 
 ## Related Works
 - [HyperPlay](https://www.hyperplay.xyz/)'s web3 game launcher SDK https://github.com/G7DAO/web3.unreal (player's wallet is in the launcher and the game can access it)
