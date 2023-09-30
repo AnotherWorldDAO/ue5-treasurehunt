@@ -22,7 +22,7 @@ You still need 3 parts:
 - [opt-in] Enter/paste a desired ETH address. Or, you will be using project default ETH address to receive test ERC20 tokens.
 - Click `START`. You are now in the `DefaultMap`
 - Use `W, A, S, D` to move around. Drag mouse to rotate view. Click `Space bar` to jump.
-- Touch the airdrop boxes to receive test ERC20 tokens.
+- Touch the airdrop boxes to receive test ERC20 tokens (via Goerli Testnet and Optimism Goerli Testnet).
 - [intermediate] you can deploy your own contracts and serverless functions.
 
 ## Live implementation
@@ -31,13 +31,16 @@ You can see live demos related to this repo in Another World (https://anotherwor
 ## Related Works
 - [HyperPlay](https://www.hyperplay.xyz/)'s web3 game launcher SDK https://github.com/G7DAO/web3.unreal (player's wallet is in the launcher and the game can access it)
 
-## Acknowledgement
-- ApeCoinDAO and ThankApe https://prop.house/thank-ape
-- Zech's ApeCoin 3D model https://prop.house/thank-ape/apecoin-designers:-design-the-future-of-apecoin/7111
-
 ## Any thoughts?
 Contact `jackie.eth` https://twitter.com/JackieLeeETH
 
 ## Future works
 - Have a multiplayer sample project and setup manual
 - Integrate ape 3d models
+
+## Acknowledgement
+- ThankApe ApeCoin grants https://prop.house/thank-ape
+- ApeCoinDAO EthGlobal hackathon grants https://forum.apecoin.com/
+- Optimism Growth Experiments grants https://gov.optimism.io/
+- OnChainMonkey DAO grants https://prop.house/onchainmonkey
+- Zech's ApeCoin 3D model https://prop.house/thank-ape/apecoin-designers:-design-the-future-of-apecoin/7111
