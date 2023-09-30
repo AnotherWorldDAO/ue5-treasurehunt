@@ -1,5 +1,5 @@
-# Treasure Hunt 3D Game Sample Code
-This is an Unreal Engine 5.2 sample project that drips ERC20 tokens during the gameplay. This project was created as a winner of the ApeCoinDAO's ThankApe props in the ApeCoin Developers: Build the Future of ApeCoin category'- https://prop.house/thank-ape/apecoin-developers:-build-the-future-of-apecoin
+# UE5 Treasure Hunt Sample Project
+This is an Unreal Engine 5.2 sample project based on Advanced Locomotion System (ALS) and airdrops ERC20 tokens during the gameplay. This project was created as a grant winner of the ApeCoinDAO's ThankApe props in the ApeCoin Developers: Build the Future of ApeCoin category'- https://prop.house/thank-ape/apecoin-developers:-build-the-future-of-apecoin
 
 ## Overview
 This is a minimum setup for an Unreal Engine game client to receive blockchain token airdrops. To simplify the player experience, this project assumes players will enter their ETH addresses at the beginning of the game. Based on game mechanics, the game server will airdrop blockchain tokens to the player's wallet address. The game will only do passive airdrops (while the server wallet pays gas fees). Additional airdrop rules can be applied on the server side or on the contract side.
@@ -27,7 +27,7 @@ A full setup requires the following parts:
 - [intermediate] You can deploy your own contracts and serverless functions
 
 ## Live implementation
-You can see [live demos](https://x.com/JackieLeeETH/status/1706024946957479960?s=20) related to this repo in Another World (https://anotherworld.gg/): players enter ENS at the entry menu and will receive (limited) token airdrops. There may be tokens available in the following GamePrize contracts:
+You can see [live demos](https://x.com/JackieLeeETH/status/1706024946957479960?s=20) related to this repo in Another World (https://anotherworld.gg/). Players enter ENS at the entry menu and will receive (limited) token airdrops. There may be tokens available in the following GamePrize contracts:
 - $APE prize contract (ETH Mainnet) https://etherscan.io/address/0x496e83e7a74561c26d5151c0fce2cc400e884e49
 - $OP prize contract (Optimism) https://optimistic.etherscan.io/address/0x0b69157f85fb767676428f0d32866ee2b53ffcc6
 
