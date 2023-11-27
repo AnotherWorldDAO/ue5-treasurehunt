@@ -4,6 +4,9 @@ This is an Unreal Engine 5.2 sample project based on Advanced Locomotion System 
 ## Overview
 This is a minimum setup for an Unreal Engine game client to receive blockchain token airdrops. To simplify the player experience, this project assumes players will enter their ETH addresses at the beginning of the game. Based on game mechanics, the game server will airdrop blockchain tokens to the player's wallet address. The game will only do passive airdrops (while the server wallet pays gas fees). Additional airdrop rules can be applied on the server side or on the contract side.
 
+![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/8f51c38e-c34d-479f-9d0d-5d84884cb8dc)
+
+
 ![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/f52b4bf2-0cab-42da-a379-8e1537a4c409)
 
 
@@ -20,7 +23,7 @@ A full setup requires the following parts:
 - Clone this repo or [download the latest release](https://github.com/AnotherWorldDAO/ue5-treasurehunt/releases)
 - Double-click on `TreasureHuntSample.uproject` to launch this project in the Unreal Engine editor
 - At `EntryMap`, click `Play` to run this game within the editor (check other Unreal beginner tutorials if you got stuck here)
-- [opt-in] Enter/paste a desired ETH address. Or, you will be using the project's default ETH address to receive test ERC20 tokens.
+- [opt-in] Enter ENS (.eth) or paste a desired ETH address. Or, you will be using the project's default ETH address to receive test ERC20 tokens.
 - Click `START`. You are now in the `DefaultMap`
 - Use `W, A, S, D` to move around. Drag the mouse to rotate the view. Click `Space bar` to jump
 - Touch the airdrop boxes to receive test ERC20 tokens (via Goerli Testnet and Optimism Goerli Testnet)
