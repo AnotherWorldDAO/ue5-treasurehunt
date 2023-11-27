@@ -7,7 +7,8 @@ This is a minimum setup for an Unreal Engine game client to receive blockchain t
 ![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/8f51c38e-c34d-479f-9d0d-5d84884cb8dc)
 
 
-![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/f52b4bf2-0cab-42da-a379-8e1537a4c409)
+![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/e2dcc0cb-0a5c-42aa-a13c-b245c4c3c39f)
+
 
 
 A full setup requires the following parts:
