@@ -2,7 +2,7 @@
 This is an Unreal Engine 5.2 sample project based on Advanced Locomotion System (ALS) and airdrops ERC20 tokens during the gameplay. This project was created as a grant winner of the ApeCoinDAO's ThankApe props in the ApeCoin Developers: Build the Future of ApeCoin category'- https://prop.house/thank-ape/apecoin-developers:-build-the-future-of-apecoin
 
 ## Overview
-This is a minimum setup for an Unreal Engine game client to receive blockchain token airdrops. To simplify the player experience, this project assumes players will enter their ETH addresses at the beginning of the game. Based on game mechanics, the game server will airdrop blockchain tokens to the player's wallet address. The game will only do passive airdrops (while the server wallet pays gas fees). Additional airdrop rules can be applied on the server side or on the contract side.
+This is a minimum setup for an Unreal Engine game client to receive blockchain token airdrops. To simplify the player experience, this project assumes players will enter their ENS or ETH addresses at the beginning of the game. Based on game mechanics, the game server will airdrop blockchain tokens to the player's wallet address. The game will only do passive airdrops (while the server wallet pays gas fees). Additional airdrop rules can be applied on the server side or on the contract side.
 
 ![image](https://github.com/AnotherWorldDAO/ue5-treasurehunt/assets/182446/8f51c38e-c34d-479f-9d0d-5d84884cb8dc)
 
@@ -20,7 +20,7 @@ A full setup requires the following parts:
 
 
 ## Quick Start (Unreal Engine)
-- Install Unreal Engine 5.2 https://www.unrealengine.com/en-US/
+- Install Unreal Engine 5.2+ https://www.unrealengine.com/en-US/
 - Clone this repo or [download the latest release](https://github.com/AnotherWorldDAO/ue5-treasurehunt/releases)
 - Double-click on `TreasureHuntSample.uproject` to launch this project in the Unreal Engine editor
 - At `EntryMap`, click `Play` to run this game within the editor (check other Unreal beginner tutorials if you got stuck here)
