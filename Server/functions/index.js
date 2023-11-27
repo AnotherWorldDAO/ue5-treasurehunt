@@ -8,6 +8,60 @@ const GamePrizeABI = require("./abi/GamePrizeABI.json");
 // need to set new env variables with `firebase functions:config:set key1=val1
 const INFURA_APIKEY = functions.config().infura.api_key;
 
+// resolve ENS to address
+exports.checkaddress = functions.https.onRequest((req, res) => {
+  cors(req, res, async () => {
+    const ethAddress = req.query.ethAddress;
+    if (ethers.utils.isAddress(ethAddress)) {
+      return res
+        .status(200)
+        .send({ success: true, ethAddress });
+    } else {
+      return res
+        .status(200)
+        .send({ success: false, msg: "invalid ethAddress" });
+    }
+  })
+})
+
+// resolve ENS to address
+exports.resolveens = functions.https.onRequest((req, res) => {
+  cors(req, res, async () => {
+    const ens = req.query.ens;
+    switch (req.method) {
+      case "GET": // handle GET request
+        try {
+          let ethAddress = null;
+          if (ens.includes(".eth")) {
+            const providerETHMainnet = new ethers.providers.JsonRpcProvider(
+              `https://mainnet.infura.io/v3/${INFURA_APIKEY}`,
+            );
+            ethAddress = await providerETHMainnet.resolveName(ens);
+            if (ethAddress) {
+              return res.status(200).send({
+                success: true,
+                ethAddress: ethAddress,
+                network: 'eth',
+              });
+            } else {
+              return res.status(200).send({ success: false, msg: "cannot resolve ENS" });
+            }
+          } else {
+            return res.status(200).send({ success: false, msg: "invalid ENS" });
+          }
+        } catch (error) {
+          res.status(200).send({ success: false, msg: "oops" });
+        }
+        break;
+      default:
+        return res.status(405).json({
+          success: false,
+          msg: "Unsupported request method",
+        });
+    }
+  });
+});
+
 // drip erc20 to a player's wallet
 exports.driperc20 = functions.https.onRequest((req, res) => {
   cors(req, res, async () => {
