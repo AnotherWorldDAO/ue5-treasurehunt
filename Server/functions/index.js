@@ -4,9 +4,10 @@ const cors = require("cors")({ origin: true });
 
 const GamePrizeABI = require("./abi/GamePrizeABI.json");
 
-// go to https://www.infura.io/ to register an API key
+// go to https://infura.io/ and https://alchemy.com/ to register an API key
 // need to set new env variables with `firebase functions:config:set key1=val1
 const INFURA_APIKEY = functions.config().infura.api_key;
+const ALCHEMY_APIKEY = functions.config().alchemy.api_key;
 
 // resolve ENS to address
 exports.checkaddress = functions.https.onRequest((req, res) => {
@@ -32,6 +33,29 @@ exports.resolveens = functions.https.onRequest((req, res) => {
       case "GET": // handle GET request
         try {
           let ethAddress = null;
+          if (
+            ens.includes(".base")){
+              const providerBaseMainnet = new ethers.providers.JsonRpcProvider(
+                {
+                  url: `https://base-mainnet.g.alchemy.com/v2/${ALCHEMY_APIKEY}`,
+                },
+                {
+                  name: `Base Mainnet`,
+                  chainId: 8453,
+                  ensAddress: "0xeCBaE6E54bAA669005b93342E5650d5886D54fc7"
+                }
+              );
+              ethAddress = await providerBaseMainnet.resolveName(ens);
+              network = 'base';
+              if (ethAddress) {
+                return res.status(200).send({
+                  ens: ens.toLowerCase(),
+                  success: true,
+                  ethAddress: ethAddress,
+                  network: 'base',
+                });
+              }
+            }
           if (ens.includes(".eth")) {
             const providerETHMainnet = new ethers.providers.JsonRpcProvider(
               `https://mainnet.infura.io/v3/${INFURA_APIKEY}`,
@@ -39,6 +63,7 @@ exports.resolveens = functions.https.onRequest((req, res) => {
             ethAddress = await providerETHMainnet.resolveName(ens);
             if (ethAddress) {
               return res.status(200).send({
+                ens: ens.toLowerCase(),
                 success: true,
                 ethAddress: ethAddress,
                 network: 'eth',
